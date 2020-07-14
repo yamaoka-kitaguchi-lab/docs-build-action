@@ -1,0 +1,9 @@
+name: docs-build-action
+description: "GitHub Action to build docs source with MkDocs and upload to AWS S3"
+author: Taichi MIYA
+runs:
+  using: docker
+  image: Dockerfile
+branding:
+  icon: upload
+  color: black
