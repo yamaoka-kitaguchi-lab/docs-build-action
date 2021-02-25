@@ -1,7 +1,9 @@
 FROM python:3.8-alpine
 MAINTAINER "Taichi MIYA <miya@net.ict.e.titech.ac.jp>"
 
-RUN apk add build-base && \
+RUN apk add \
+        build-base \
+        git && \
     pip install --quiet --no-cache-dir \
         mkdocs \
         mkdocs-material \
