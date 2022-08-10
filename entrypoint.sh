@@ -1,4 +1,4 @@
-#!/bin/bash -xe
+#!/bin/sh -xe
 
 chmod -R +w /github/workspace
 git config --global --add safe.directory *
