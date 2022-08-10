@@ -1,10 +1,11 @@
 FROM python:3.8-alpine
-MAINTAINER "Taichi MIYA <miya@net.ict.e.titech.ac.jp>"
+LABEL maintainer "MIYA, Taichi <miya@net.ict.e.titech.ac.jp>"
+LABEL org.opencontainers.image.source https://github.com/yamaoka-kitaguchi-lab/docs-build-action
 
 RUN apk add \
         build-base \
-        git && \
-    pip install --quiet --no-cache-dir \
+        git \
+ && pip install --quiet --no-cache-dir \
         mkdocs \
         mkdocs-material \
         mkdocs-minify-plugin \
