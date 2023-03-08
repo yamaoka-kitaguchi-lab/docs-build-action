@@ -5,11 +5,13 @@ LABEL org.opencontainers.image.source https://github.com/yamaoka-kitaguchi-lab/d
 RUN apk add \
         build-base \
         git \
- && pip install --quiet --no-cache-dir \
+        && pip install --quiet --no-cache-dir \
         mkdocs \
         mkdocs-material \
         mkdocs-minify-plugin \
-        mkdocs-git-revision-date-localized-plugin
+        mkdocs-git-revision-date-localized-plugin \
+        mdx-spanner
+
 
 ADD entrypoint.sh /sbin/entrypoint.sh
 RUN chmod +x /sbin/entrypoint.sh
